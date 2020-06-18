@@ -1,0 +1,14 @@
+{% extends "layout.html.twig" %}
+
+
+{% block title %}{{ widget.title }}{% endblock %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <h1 class="title">{{ widget.title }}</h1>
+            <p>$ {{ widget.price }}</p>
+            <p>{{ widget.description }}</p>
+        </div>
+    </section>
+{% endblock %}

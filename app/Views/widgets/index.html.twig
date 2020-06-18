@@ -1,0 +1,18 @@
+{% extends "layout.html.twig" %}
+
+
+{% block title %}{{ widget.title }}{% endblock %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <ul>
+                {% for widget in widgets %}
+                    {#    {% if widget.stock > 1%}#}
+                    <li>{{ widget.title }} - {{ widget.price }}</li>
+                    {#    {% endif %}#}
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endblock %}
